@@ -8,7 +8,8 @@
 🌹🍀🌹🍀🌹🍀🌹🍀
 
 ![](https://emoji-maker.com/images/favicon-angel-rock-chick-78x78.gif)
-![](https://octodex.github.com/images/hula_loop_octodex03.gif =250x250)
+
+<img src="https://octodex.github.com/images/hula_loop_octodex03.gif" width="250" height="250"/>
 
 
 

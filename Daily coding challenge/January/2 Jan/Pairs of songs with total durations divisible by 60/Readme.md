@@ -2,4 +2,4 @@
 <br>
 https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
 
-![](https://octodex.github.com/images/daftpunktocat-guy.gif)
+![](https://octodex.github.com/images/daftpunktocat-guy.gif width="100" height="100")

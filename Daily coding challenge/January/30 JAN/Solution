@@ -1,0 +1,24 @@
+class Solution {
+    public int largestRectangleArea(int[] heights) {
+        if (heights.length == 0) return 0;
+        int n = heights.length;
+        int[] left = new int[n], right = new int[n];
+        // find the left and right boundary makes calculation easier
+        // (right - left  + 1) * heights[i]
+        for (int i = 0; i < n; i++) {
+            // find the first index on the left that has lower height than current
+            int p = i - 1;
+            while (p >= 0 && heights[p] >= heights[i]) p = left[p];
+            left[i] = p;
+            // find the first index on the right that has lower height than current
+            p = n - i;
+            while (p < n && heights[p] >= heights[n - 1 - i]) p = right[p];
+            right[n - 1 - i] = p;
+        }
+        int maxArea = 0;
+        for (int i = 0; i < n; i++) {
+            maxArea = Math.max(maxArea, (right[i] - left[i] - 1) * heights[i]);
+        }
+        return maxArea;
+    }
+}
